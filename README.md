@@ -25,10 +25,38 @@ npm run dev
 
 3. Open http://localhost:3000
 
+
+
+
+
+## GitHub repository setup
+
+This project is already connected to your GitHub repository named `javascript`.
+
+If you need to push updates again, use:
+
+```bash
+git add .
+git commit -m "Update Next.js mock chat app"
+git push origin master
+```
+
+If you have not yet created the repo on GitHub, create it first at `https://github.com/Anii109/javascript`, then run:
+
+```bash
+git remote add origin https://github.com/Anii109/javascript.git
+git branch -M master
+git push -u origin master
+```
+
 ## Deploying to Vercel
 
-1. Create a GitHub repository and push this project.
-2. Sign in to Vercel and import the repository.
-3. Vercel will detect Next.js automatically.
+1. Sign in to Vercel and import the repository from GitHub.
+2. Select the `javascript` repository.
+3. Vercel will detect the Next.js app automatically and build it.
+4. After deployment, Vercel provides a public URL you can share.
 
-Your app will be deployed on a public Vercel URL.
+## Notes
+
+- The frontend sends messages to the mock backend at `/api/chat`.
+- Later, you can replace the mock route with a real AI/RAG API.
